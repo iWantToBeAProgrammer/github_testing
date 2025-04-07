@@ -5,10 +5,18 @@ const FormCard = ({ action }) => {
         <legend className="fieldset-legend">{action}</legend>
 
         <label className="fieldset-label">Email</label>
-        <input type="email" className="input w-lg" placeholder="Email" />
+        <input
+          type="email"
+          className="input w-lg bg-primary"
+          placeholder="Email"
+        />
 
         <label className="fieldset-label">Password</label>
-        <input type="password" className="input w-lg" placeholder="Password" />
+        <input
+          type="password"
+          className="input w-lg bg-primary"
+          placeholder="Password"
+        />
 
         {action === "register" && (
           <div>
